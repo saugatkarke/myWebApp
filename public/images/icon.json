@@ -37,8 +37,8 @@
 		"day" : "Mist",
 		"night" : "Mist",
 		"icon" : 143,
-        "imageDay" :"Day.jpg",
-        "imageNight" :"Night.jpg"
+        "imageDay" :"sunnyDay.jpg",
+        "imageNight" :"clearNight.jpg"
 	},
 	{
 		"code" : 1063,
