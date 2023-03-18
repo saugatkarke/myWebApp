@@ -4,9 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <script src="/myWeatherApp/public/weatherApi.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="/myWeatherApp/public/weather.css">
   <title>Weather App</title>
 </head>
 <body>
-  <section>
+  <section id="main-section">
+    <div class="header-location">
+      <div class="sub-header">
+        <div class="heading-text"><i class="fas fa-map-marker"></i>
+     <p id="heading-txt">Searching...</p></div>
+    </div>
+    </div>
+    <main>
+     
+     <div class="main-container">
+      <div class="current-location-info">
+        <h1 id="location-row-2">sdasf</h1>
+        <div class="location-row-3">
+        <p>Feels Like ~ <span id="location-row-2-temp"></span></p>
+      </div>
+      <p class="location-row-4"></p>
+      </div>
+      <div class="current-weather-info">
+        <div class="current-time-row-1"></div>
+        <img src="" alt=""/>
+        <span class="current-condition-row-3">Clear</span>
+        <div id="current-temp-row-4">27°C</div>
+      </div>
+      <div class="more-weather-info">
+        <span class="updated-time-row-1"></span>
+        <span class="timezone-row"></span>
+        <div class="more-info-row-2">
+          <div class="high-temp">
+        <img src="/myWeatherApp/public/images/Vector (1).svg" alt="high temp">
+        <span class="high-temp-txt"></span>
+      </div>
+      <div class="low-temp">
+        <img src="/myWeatherApp/public/images/Vector (2).svg" alt="high temp">
+        <span class="low-temp-txt"></span>
+      </div>
+      </div>
+      <div class="more-info-row-3">
+       <div class="info-txt">
+        <p>Humidity:</p>
+        <span id="hum-cl"></span>
+       </div>
+       <div class="info-txt">
+        <p> Wind:</p>
+        <span id="gust-cl"></span>
+       </div>
+       <div class="info-txt">
+        <p>Pressure:</p>
+        <span id="pre-cl"></span>
+       </div>
+       <div class="info-txt">
+        <p> Wind Direction:</p>
+        <span><span id="wind-cl-1"></span> <span id="wind-cl-2"></span></span>
+       </div>
+      </div>
+      </div>
+      <div class="second-container">
+        <div class="second-cont-row cont-row-txt">
+          <img src="/myWeatherApp/public/images/Rainy Weather.svg" alt="">
+          <span>Chance of Rain |</span>
+          <span id="rain-txt"></span></div>
+        <div class="second-cont-row cont-row-txt">
+          <img src="/myWeatherApp/public/images/Fire.svg" alt="">
+          <span>Fire | </span>
+          <span> N/A
+          </span></div>
+        <div class="second-cont-row cont-row-txt">
+          <img src="/myWeatherApp/public/images/Hygrometer.svg" alt="">
+          <span>Amount of Rain |</span>
+          <span id="amt-txt"></span></div>
+        <div class="second-cont-row cont-row-txt">
+          <img src="/myWeatherApp/public/images/Sunflower.svg" alt="">
+          <span>UV Index | </span>
+          <span id="sun-txt"></span></div>
+      </div>
+     </div>
+     
+    </main>
+  </section>
 </body>
 </html>
