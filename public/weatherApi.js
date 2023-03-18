@@ -170,7 +170,7 @@ function getWeatherBg(isDay, condition)
     let getday = isDay;
     let getCode = condition;
     
-    fetch('/myWeatherApp/public/images/icon.json')
+    fetch('/images/icon.json')
     .then(response=> response.json())
     .then(datas=>
         {
@@ -189,10 +189,10 @@ function checkIcon(res, dayNight)
    let weatherBg = document.querySelector('#main-section');
    if(dayNight == 1){
     console.log(res.imageDay);
-    weatherBg.style.backgroundImage = 'url(/myWeatherApp/public/images/'+res.imageDay+')';
+    weatherBg.style.backgroundImage = 'url(/images/'+res.imageDay+')';
     return;
    }
-   weatherBg.style.backgroundImage = 'url(/myWeatherApp/public/images/'+res.imageNight+')';
+   weatherBg.style.backgroundImage = 'url(/images/'+res.imageNight+')';
 
 }
   
