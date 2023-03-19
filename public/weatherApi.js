@@ -73,7 +73,7 @@ function watchLocation() {
 async function showPosition(position){
 
   const locURL = 'https://api.geoapify.com/v1/geocode/reverse?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&format=json&apiKey=e95ada9a60654680b049597fa4fa6ff7';
-  const foreWeatherURL = 'http://api.weatherapi.com/v1/forecast.json?q='+position.coords.latitude+','+position.coords.longitude+'&key=b07b1a055500470e8f942328230503&days=7';
+  const foreWeatherURL = 'https://api.weatherapi.com/v1/forecast.json?q='+position.coords.latitude+','+position.coords.longitude+'&key=b07b1a055500470e8f942328230503&days=7';
 
  
   try {
