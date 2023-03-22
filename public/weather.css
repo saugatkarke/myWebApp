@@ -10,7 +10,7 @@ main[data-before-load]
 }
 div[data-before-load='blur']
 {
-    filter: blur(5px);
+    filter: blur(4px);
 }
 div[data-before-load='unblur']
 {
